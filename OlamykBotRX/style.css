@@ -1,0 +1,153 @@
+/* Reset default styling */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom right, #1a1a1a, #333);
+  color: #fff;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 10px;
+}
+
+.container {
+  max-width: 700px;
+  width: 100%;
+  background-color: #222;
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 0 20px rgba(255, 0, 128, 0.2);
+}
+
+header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  color: #ff0077;
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #ccc;
+  margin-top: 10px;
+}
+
+.features ul {
+  list-style: square;
+  margin-left: 20px;
+  margin-bottom: 30px;
+  color: #f0f0f0;
+}
+
+.features li {
+  margin-bottom: 10px;
+  line-height: 1.5;
+}
+
+h2 {
+  color: #ff3399;
+  margin-bottom: 10px;
+  font-size: 1.4rem;
+}
+
+.toggle-setting {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 50px;
+  height: 26px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #555;
+  transition: 0.4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 20px;
+  width: 20px;
+  left: 4px;
+  bottom: 3px;
+  background-color: white;
+  transition: 0.4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ff3399;
+}
+
+input:checked + .slider:before {
+  transform: translateX(24px);
+}
+
+.message-box {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.message-box input {
+  flex: 1;
+  padding: 12px;
+  border-radius: 10px;
+  border: none;
+  font-size: 1rem;
+  outline: none;
+}
+
+.message-box button {
+  padding: 12px 20px;
+  background-color: #ff3399;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+#botOutput {
+  background: #111;
+  padding: 15px;
+  border-radius: 10px;
+  color: #ddd;
+  font-size: 1rem;
+  min-height: 60px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
