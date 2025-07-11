@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OlamykBotRX – Your Savage WhatsApp Bot</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>🤖 OlamykBotRX</h1>
+      <p class="subtitle">Smart. Savage. Always on duty for OLAMYK.</p>
+    </header>
+
+    <section class="features">
+      <h2>🔥 Bot Capabilities</h2>
+      <ul>
+        <li>✅ Auto-reply to messages based on tone and mood</li>
+        <li>❤️ Auto-like chosen status updates</li>
+        <li>📝 Deleted message recovery</li>
+        <li>🤖 GPT-powered message generation</li>
+        <li>⚙️ Code execution: Python, JS</li>
+        <li>🌏 Plugin & API integrations</li>
+        <li>🕛 Message scheduler</li>
+        <li>🎤 Voice-to-text, text-to-voice</li>
+        <li>📲 Remote dashboard controls</li>
+        <li>🧠 Learns how OLAMYK replies</li>
+      </ul>
+    </section>
+
+    <section class="dashboard">
+      <h2>📊 Control Panel</h2>
+      <div class="toggle-setting">
+        <label>Savage Mode:</label>
+        <label class="switch">
+          <input type="checkbox" id="savageToggle" checked />
+          <span class="slider"></span>
+        </label>
+        <span id="modeLabel">ON</span>
+      </div>
+
+      <div class="message-box">
+        <input type="text" id="userMessage" placeholder="Say something to OlamykBotRX..." />
+        <button onclick="handleReply()">Send</button>
+      </div>
+
+      <div id="botOutput"></div>
+    </section>
+
+    <footer>
+      <p>&copy; 2025 OlamykBotRX. Designed with ❤️ by OLAMYK himself.</p>
+    </footer>
+  </div>
+
+  <script src="olamykbotrx.js"></script>
+</body>
+</html>
